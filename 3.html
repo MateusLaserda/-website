@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Регистрация</title>
+  <link rel="stylesheet" href="css/style2.css"> <!-- Путь к вашему CSS файлу -->
+</head>
+<body>
+  <div class="register-container">
+    <h2>Форма регистрации</h2>
+    <form action="/submit_registration" method="post"> <!-- Обновите action в соответствии с вашим серверным обработчиком -->
+      <label for="username">Имя пользователя:</label>
+      <input type="text" id="username" name="username" required>
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="password">Пароль:</label>
+      <input type="password" id="password" name="password" required>
+
+      <button type="submit" class="submit-button">Зарегистрироваться</button>
+    </form>
+  </div>
+</body>
+</html>
